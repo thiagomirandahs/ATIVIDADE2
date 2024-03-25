@@ -1,0 +1,28 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 3s;
+    
+    
+}
+.circulo:hover{
+    background-color: blue;
+    transform: scale(2);
+}
