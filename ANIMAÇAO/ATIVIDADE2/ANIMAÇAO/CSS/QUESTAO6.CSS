@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rodaremudarcor 6s linear infinite;
+}
+@keyframes rodaremudarcor {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg); 
+        background-color: black; 
+    }
+    12.5% {
+        background-color: red; 
+    }
+    25% {
+        background-color: orange; 
+    }
+    37.5% {
+        background-color: yellow; 
+    }
+    50% {
+        background-color: green; 
+    }
+    62.5% {
+        background-color: blue; 
+    }
+    75% {
+        background-color: indigo; 
+    }
+    87.5% {
+        background-color: violet; 
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg); 
+        background-color: black; 
+    }
+}

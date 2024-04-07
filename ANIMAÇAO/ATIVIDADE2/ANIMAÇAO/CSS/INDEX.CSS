@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: blue;
+    background-position: center;   
+    width: 100vw; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: rgb(12, 12, 12);
+}
+
+.menu ul li {
+    display: block;
+    margin-bottom: 10px; 
+}
+
+nav ul li a {
+    display: block;
+    padding: 50px 70px;
+    color: #000000;
+    text-decoration: rgb(14, 14, 14);
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
