@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.quadrado {
+    width: 0;
+    height: 0;
+    background-color: red;
+    animation: aparecer 4s linear infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        width: 0;
+        height: 0;
+        background-color: red;
+    }
+
+    50% {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+    }
+
+    100% {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+    }
+}
+.botao-voltar {
+    display: inline-block;
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    padding: 10px 30px;
+    background-color: #007bff; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+.botao-voltar:hover {
+    background-color: #000000; 

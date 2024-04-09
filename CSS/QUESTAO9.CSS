@@ -1,0 +1,64 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: pulsar 3s;
+    animation: pulsar 2s ease infinite;
+
+
+}
+
+
+@keyframes pulsar {
+
+    0% {
+        transform: scale(1);
+
+    }
+
+    50% {
+        transform: scale(2);
+        background-color: aqua;
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: blueviolet;
+    }
+}
+.botao-voltar {
+    display: inline-block;
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    padding: 10px 30px;
+    background-color: #007bff; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+.botao-voltar:hover {
+    background-color: #000000; 
